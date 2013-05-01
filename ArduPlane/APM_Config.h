@@ -100,6 +100,15 @@
 
 */
 
+#define VOLT_DIV_RATIO 3.181
+#define CURR_AMP_PER_VOLT 13.0
+#define INPUT_VOLTAGE 4.84
+#define CONFIG_PITOT_SOURCE_ANALOG_PIN 3
+#define RECEIVER_RSSI_PIN 2
+#define RECEIVER_RSSI_GPS ENABLED
+
+#define FBWB_BEARING_ALTITUDE ENABLED
+
 #include "APM_Config_Thp.h"
 
 //#include "APM_Config_HILmode.h"

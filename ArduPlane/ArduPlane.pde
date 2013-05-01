@@ -148,7 +148,7 @@ Arduino_Mega_ISR_Registry isr_registry;
 	#elif TX_CHANNEL_SET == TX_set2
 		static uint8_t pinRcChannel[8] = {1, 0, 2, 3, 4,5,6,7}; // some Hitec/Sanwa/others
 	#elif TX_CHANNEL_SET == TX_mwi
-		static uint8_t pinRcChannel[8] = {1, 2, 0, 3, 4,5,6,7}; // mapped multiwii to APM layout
+		static uint8_t pinRcChannel[8] = {1, 2, 3, 4, 5,6,7,0}; // mapped multiwii to APM layout
 	#endif
 	
 	#if PIRATES_SENSOR_BOARD == PIRATES_BLACKVORTEX
