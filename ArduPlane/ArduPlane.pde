@@ -1301,8 +1301,8 @@ static void update_current_flight_mode(void)
 				hold_course = -1;
                 {
                     static long fbw_bearing;
-                    long change = g.channel_roll.norm_input() * 20;
-                    if (abs(change) > 20/2)
+                    long change = g.channel_roll.norm_input() * 40;
+                    if (4 * abs(change) > 40)
                         {
                             fbw_bearing += change;
                             fbw_bearing = wrap_360(fbw_bearing);
@@ -1312,7 +1312,7 @@ static void update_current_flight_mode(void)
                 {
                     static long fbw_altitude = g.FBWB_min_altitude;
                     long change = g.channel_pitch.norm_input() * 10;
-                    if (abs(change) > 10/2)
+                    if (4 * abs(change) > 10)
                         {
                             fbw_altitude += change;
                         }
